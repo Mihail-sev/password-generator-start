@@ -20,9 +20,9 @@ for sym in range (0, nr_symbols):
 for sym in range (0, nr_numbers):
   password.insert(randint(0, all_nr-1), numbers[randint(0, len(numbers)-1)])
 user_password = ("")
-for i in range (0, len (password)):
-  user_password += password [i]
-print (password)
+for i in password:
+  user_password += i
+# print (password)
 print (f"Your password:   {user_password}")
 
 #Hard Level - Order of characters randomised:
