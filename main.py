@@ -22,7 +22,7 @@ for sym in range (0, nr_numbers):
 user_password = ("")
 for i in range (0, len (password)):
   user_password += password [i]
-print (password)
+# print (password)
 print (user_password)
 
 #Hard Level - Order of characters randomised:
