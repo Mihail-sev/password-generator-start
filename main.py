@@ -23,7 +23,7 @@ user_password = ("")
 for i in range (0, len (password)):
   user_password += password [i]
 # print (password)
-print (user_password)
+print (f"Your password:   {user_password}")
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&
