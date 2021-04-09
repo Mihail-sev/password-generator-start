@@ -14,15 +14,15 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 all_nr = nr_letters+nr_numbers+nr_symbols
 password = []
 for sym in range (0, nr_letters):
-  password.insert(randint(0, all_nr) , letters[randint(0, len(letters)-1)])
+  password.insert(randint(0, all_nr-1) , letters[randint(0, len(letters)-1)])
 for sym in range (0, nr_symbols):
-  password.insert(randint(0, all_nr), symbols[randint(0, len(symbols)-1)])
+  password.insert(randint(0, all_nr-1), symbols[randint(0, len(symbols)-1)])
 for sym in range (0, nr_numbers):
-  password.insert(randint(0, all_nr), numbers[randint(0, len(numbers)-1)])
+  password.insert(randint(0, all_nr-1), numbers[randint(0, len(numbers)-1)])
 user_password = ("")
 for i in range (0, len (password)):
   user_password += password [i]
-# print (password)
+print (password)
 print (f"Your password:   {user_password}")
 
 #Hard Level - Order of characters randomised:
